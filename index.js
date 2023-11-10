@@ -51,7 +51,9 @@ io.on('connection', (socket) => {
     }
   });
 
-
+  socket.on('meenstest', (data) => {
+    io.emit('dataresult', data);
+  });
 
 
 
